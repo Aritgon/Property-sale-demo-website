@@ -277,13 +277,13 @@ footer {
     & .main-container {
         height: auto;
         width: 100%;
-        padding: 0.8em 0.2em;
+        padding: 0.8em 0;
         text-align: center;
 
         & .cpt-container {
             gap: 1em;
             align-items: center;
-
+            padding: 0 0.2em;
             & #main-cpt {
                 font-size: 42px;
                 font-weight: 600;
@@ -464,6 +464,7 @@ footer {
         & .cpt-container {
             gap: 1em;
             align-items: center;
+            padding: 0 0.2em;
 
             & #main-cpt {
                 font-size: 48px;
