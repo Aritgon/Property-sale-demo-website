@@ -241,7 +241,7 @@ footer {
 }
 
 /* writing media queries */
-/* Mobile phone break point */
+/* Small Mobile phone break point */
 @media (max-width : 320px) {
     nav {
     display: flex;
@@ -353,6 +353,187 @@ footer {
                     border-radius: 10px;
                     height: 8em;
                     width: 100%;
+                }
+
+                & p {
+                    text-align: center;
+                    color: #444444;
+                }
+            }
+        }
+    }
+}
+    .quote-section {
+        display: flex;
+        place-content: center;
+        /* padding: 4em 0; */;
+
+        & .quote-container {
+            width: 100%;
+            padding: 0 1em;
+            /* border: 2px solid blue; */
+
+            & #main-quote {
+                font-size: 20px;
+                padding-bottom: 5%;
+            }
+
+        }
+    }
+    .cta-section {
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    padding: 5em 0;
+
+    & .cta-container {
+        width: 100%;
+        height: auto;
+        /* border: 2px solid brown; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--font-color);
+        padding: 2em 0.8em;
+        border-radius: 10px;
+        text-align: center;
+        gap: 5%;
+
+        & .cta-caption {
+            /* border: 2px solid chartreuse; */
+            color: var(--bg-color);
+            margin-bottom: 6%;
+
+            & :nth-child(1) {
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 2%;
+            }
+
+            & :nth-child(2) {
+                font-weight: 300;
+            }
+        }
+
+        & .cta-btn {
+            width: 32%;
+            padding: 0.8em 0.3em;
+            font-weight: 500;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+}
+}
+
+/* medium sized mobile phone break point */
+@media (max-width: 487px) {
+        nav {
+        display: flex;
+        place-content: center;
+        flex-wrap: wrap;
+
+    & .navbar-container {
+        /* border: 2px solid red; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8em 0.6em;
+
+        & .nav-header {
+            font-size: 1em;
+        }
+
+        & .nav-links {
+            display: none;
+            /* border: 2px solid olive; */
+            list-style-type: none;
+            font-size: 15px;
+        }
+    }
+}
+    .main-section {
+
+    & .main-container {
+        height: auto;
+        width: 100%;
+        padding: 1.8em 0.2em;
+        text-align: center;
+
+        & .cpt-container {
+            gap: 1em;
+            align-items: center;
+
+            & #main-cpt {
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 1.2;
+            }
+
+            & #sub-cpt {
+                font-size: 24px;
+                font-weight: 300;
+            }
+            &  #main-cta {
+                width: 40%;
+                font-weight: 500;
+            }
+        }
+
+        & .img-container {
+            display: none;
+            /* border: 2px solid yellow; */
+            flex: 1;
+            background: url("./House_image.png");
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-size: 123%;
+        }
+    }
+}
+    .card-section {
+        height: auto;
+
+    & .card-container {
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 1.3em 0.2em;
+        gap: 2.2em;
+
+        & h1 {
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        & .card-holder {
+            /* border: 2px solid black; */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: auto;
+
+
+            & .card-img-div {
+                padding-bottom: 15%;
+                /* border: 2px solid brown; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* gap: %; */
+
+                & img {
+                    display: block;
+                    border: 4px solid var(--button-hover);
+                    border-radius: 10px;
+                    height: 8em;
+                    width: 120% !important;
                 }
 
                 & p {
