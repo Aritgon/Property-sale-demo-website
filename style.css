@@ -316,7 +316,7 @@ footer {
 
     & .card-container {
         width: 100%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -458,7 +458,7 @@ footer {
     & .main-container {
         height: auto;
         width: 100%;
-        padding: 1.8em 0.2em;
+        padding: 1.8em 0;
         text-align: center;
 
         & .cpt-container {
@@ -547,7 +547,7 @@ footer {
     .quote-section {
         display: flex;
         place-content: center;
-        /* padding: 4em 0; */;
+        /* padding: 4em 0; */
 
         & .quote-container {
             width: 100%;
